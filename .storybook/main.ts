@@ -32,8 +32,8 @@ const config: StorybookConfig = {
       new TsconfigPathsPlugin({
         configFile: path.resolve(__dirname, "../tsconfig.json")
       }),
-    ],
-return config
+    ];
+    return config
   }
 };
 
