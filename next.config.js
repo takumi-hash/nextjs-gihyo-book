@@ -12,6 +12,14 @@ const nextConfig = {
     }
     return compilerConfig;
   })(),
+  async rewrites() {
+    return [
+      {
+        // ex. /api/proxy
+        source: `${process.env.API_BASE_URL}/:match*`,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
