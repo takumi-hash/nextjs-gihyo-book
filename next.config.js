@@ -17,6 +17,8 @@ const nextConfig = {
       {
         // ex. /api/proxy
         source: `${process.env.API_BASE_URL}/:match*`,
+        // ex. http://localhost:8000
+        destination: `${process.env.API_BASE_URL}/:match*`,
       },
     ];
   },
