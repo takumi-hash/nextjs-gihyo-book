@@ -16,7 +16,7 @@ export type ButtonVariant = "primary" | "secondary" | "danger";
 
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: ButtonVariant;
-  fontSize?: Responsive<string>;
+  fontSize?: Responsive<FontSize>;
   letterSpacing?: Responsive<LetterSpacing>;
   lineHeight?: Responsive<LineHeight>;
   textAlign?: Responsive<string>;
