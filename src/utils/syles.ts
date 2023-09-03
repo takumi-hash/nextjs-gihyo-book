@@ -33,7 +33,7 @@ const BREAKPOINTS: { [key: string]: string } = {
  * @param prop Responsive型
  * @returns CSSプロパティとその値 (ex. background-color: white;)
  */
-function toPropValue<T>(
+export function toPropValue<T>(
   propKey: string,
   prop?: Responsive<T>,
   theme?: AppTheme

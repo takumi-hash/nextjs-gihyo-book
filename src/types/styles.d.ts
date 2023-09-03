@@ -98,7 +98,7 @@ export type CSSPropertyFlexDirection =
   | "row"
   | "row-reverse";
 
-export type CSSPropertyJutifySelf =
+export type CSSPropertyJustifySelf =
   | CSSPropertyGlobals
   | SelfPosition
   | "auto"
@@ -128,7 +128,9 @@ export type CSSPropertyGridColumn =
   | GridLine
   | (string & {});
 
-export type CSSPropertyGridRow =
+export type CSSPropertyGridRow = CSSPropertyGlobals | GridLine | (string & {});
+
+export type CSSPropertyGridAutoFlow =
   | CSSPropertyGlobals
   | "column"
   | "dense"
